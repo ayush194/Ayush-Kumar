@@ -84,8 +84,7 @@ for i in range(1,4):
 
 #scenes
 scenes = ['./Scenes/scene_1.png', './Scenes/scene_1.png', './Scenes/scene_1.png']
-#SCENE_HEIGHTS = [116, 114, 113]
-SCENE_HEIGHTS = [0,0,0]
+SCENE_HEIGHTS = [116, ]
 scene_count = 0
 
 #health
@@ -118,8 +117,8 @@ wait = random.randint(1,20)
 
 while True: # main game loop
 	DISPLAYSURF.fill(BLACK)
-	#scene_object = pygame.image.load(scenes[scene_count])
-	#DISPLAYSURF.blit(scene_object, (0,0))
+	scene_object = pygame.image.load(scenes[scene_count])
+	DISPLAYSURF.blit(scene_object, (0,0))
 
 	#random variables
 	clam = 0
